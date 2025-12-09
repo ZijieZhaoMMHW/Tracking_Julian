@@ -9,8 +9,8 @@ A comprehensive Julia package for tracking and analyzing marine/atmospheric heat
 
 **HeatWaveTracker.jl** provides three complementary methods for heat wave analysis:
 
-1. **`hwtrack_nouniform`** - Event tracking with splitting and merging (Sun et al., 2023)
-2. **`Tracker`** (Ocetrac) - Object-based tracking with morphological operations (Scannell et al., 2023)
+1. **`hwtrack_nouniform`** - Spatially Coherent Tracking (Sun et al., 2023)
+2. **`Tracker`** (Ocetrac) - Spatiotemporally Coherent Tracking (Scannell et al., 2023)
 3. **`SpatialTemporalNormalization`** - Spatial-temporal normalization for composite analysis (Zhao et al., in review)
 
 These methods can be used independently or combined to provide comprehensive heat wave event characterization from detection through composite analysis.
