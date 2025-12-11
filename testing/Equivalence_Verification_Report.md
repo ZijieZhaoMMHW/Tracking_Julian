@@ -50,29 +50,6 @@ Minimum area threshold:       11.4
 
 ---
 
-## Processing Pipeline
-
-Both implementations follow identical steps:
-
-```
-1. Input Validation
-   ↓
-2. Binary Conversion (threshold-based)
-   ↓
-3. Morphological Operations (closing → opening)
-   ↓
-4. Mask Application
-   ↓
-5. Area Filtering (quantile-based)
-   ↓
-6. Connected Component Labeling (3D, 26-connectivity)
-   ↓
-7. Periodic Boundary Wrapping
-   ↓
-8. Output with Metadata
-```
-
----
 
 ## Numerical Verification
 
@@ -122,34 +99,6 @@ function wrap_labels(labels)
 ```
 
 **Both follow the same object-oriented design pattern with identical method flow.**
-
----
-
-## Key Findings
-
-### 1. Mathematical Equivalence
-- All mathematical formulas are identical
-- Structuring element defined by same equation
-- Quantile calculations produce same thresholds
-- Connectivity definitions are identical
-
-### 2. Algorithmic Equivalence
-- Morphological operations use equivalent library implementations
-- Connected component labeling uses same algorithm
-- Boundary handling logic is identical
-- Filtering strategy is identical
-
-### 3. Output Equivalence
-- Label value ranges match
-- Object counts match
-- Pixel assignments match
-- Metadata statistics match
-
-### 4. Numerical Stability
-- No floating-point precision issues
-- Integer labels remain consistent
-- Edge cases handled correctly
-- Results stable across parameter variations
 
 ---
 
