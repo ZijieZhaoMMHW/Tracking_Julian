@@ -62,11 +62,11 @@ Minimum area threshold:       11.4
 
 ### Test Configurations
 
-| Config | Radius | Quantile | Initial | Final | Status |
+| Config | Radius | Quantile | Initial | Final | Overlapping Rate |
 |--------|--------|----------|---------|-------|--------|
-| Standard | 2 | 0.3 | 15 | 2 | ✓ Pass |
-| No filtering | 1 | 0.0 | 18 | 4 | ✓ Pass |
-| Aggressive | 3 | 0.5 | 5 | 1 | ✓ Pass |
+| Standard | 2 | 0.3 | 2 | 232 | 100% |
+| No filtering | 1 | 0.0 | 3 | 481 | 100% |
+| Aggressive | 3 | 0.5 | 5 | 124 | 100% |
 
 **All configurations produce consistent, expected results.**
 
