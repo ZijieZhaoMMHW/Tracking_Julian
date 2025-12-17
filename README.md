@@ -1,4 +1,4 @@
-# HeatWaveTracker.jl
+# ExtremeTracker.jl
 
 [![Julia](https://img.shields.io/badge/Julia-1.6+-9558B2?style=flat&logo=julia&logoColor=white)](https://julialang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
