@@ -7,7 +7,6 @@ using ImageMorphology
 Heat wave tracking algorithm - non-uniform grid version
 Originally written by Sun Di
 Modified and rewritten by Zijie Zhao
-Translated to Julia by Claude
 
 # Arguments
 - `hw`: 3D array of heat wave masks (nx, ny, nt)
