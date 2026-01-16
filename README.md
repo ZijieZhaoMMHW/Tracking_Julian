@@ -274,11 +274,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Zijie Zhao for the spatial-temporal normalization framework
 - The Julia community for excellent packages and support
 
-## Contact
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/HeatWaveTracker.jl/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/HeatWaveTracker.jl/discussions)
-- **Email**: your.email@institution.edu
 
 ## Related Projects
 
