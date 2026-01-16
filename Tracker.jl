@@ -2,7 +2,6 @@
     Tracker.jl
 
 This module applies all Ocetrac methods for labeling objects in 3 dimensions.
-Translated from Python to Julia.
 """
 
 using Images
