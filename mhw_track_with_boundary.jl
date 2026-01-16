@@ -5,7 +5,6 @@
     to handle periodic boundary conditions (360° to 0° longitude wrapping)
     
     Originally written by Sun Di, Modified by Zijie Zhao
-    Julia translation with boundary handling by Claude
 """
 
 using Statistics
