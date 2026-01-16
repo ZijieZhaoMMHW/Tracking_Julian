@@ -6,7 +6,6 @@ This module normalizes heat wave tracks into a standardized circular grid
 and temporal phases for composite analysis.
 
 Based on MATLAB code by Zijie Zhao
-Translated to Julia
 """
 
 using Statistics
