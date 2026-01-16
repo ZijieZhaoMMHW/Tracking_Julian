@@ -127,53 +127,6 @@ composite = compute_composite(normalized_data, method="mean")
 # Output dimensions: (res, res, n_phases, n_variables)
 ```
 
-## Complete Workflow Example
-
-```julia
-using HeatWaveTracker
-using NCDatasets
-
-# 1. Load data
-ds = NCDataset("sst_data.nc")
-sst = ds["sst"][:]  # (lon, lat, time)
-lon = ds["lon"][:]
-lat = ds["lat"][:]
-close(ds)
-
-# 2. Calculate anomalies and threshold
-sst_anom = calculate_anomalies(sst)  # Your preprocessing
-threshold = calculate_threshold(sst_anom, percentile=90)
-hw_binary = sst_anom .> threshold
-
-# 3. Track heat waves (choose one method)
-
-## Option A: Sun et al. method
-tracks_sun = hwtrack_nouniform(hw_binary, lon, lat, nums=10)
-
-## Option B: Scannell et al. method  
-mask = create_ocean_mask(lon, lat)
-tracker = Tracker(sst_anom, mask, 8, 0.75)
-labels, metadata = track(tracker)
-tracks_scannell = convert_labels_to_tracks(labels)  # Helper function
-
-# 4. Spatial-temporal normalization
-radius_max = calculate_max_radius(tracks_sun, lon, lat)
-
-# Prepare multi-variable data
-data_anom = cat(sst_anom, slp_anom, wind_anom; dims=4)
-
-normalized = spatial_temporal_normalization(
-    tracks_sun, data_anom, lon, lat, radius_max,
-    res=50, n_phases=5
-)
-
-# 5. Composite analysis
-composite_mean = compute_composite(normalized, method="mean")
-composite_std = compute_composite(normalized, method="std")
-
-# 6. Save results
-save_normalized_data(normalized, "hw_normalized.jld2")
-```
 
 ## Method Comparison
 
@@ -183,8 +136,8 @@ save_normalized_data(normalized, "hw_normalized.jld2")
 | **Morphological Ops** | No | Yes (closing/opening) |
 | **Size Filtering** | Fixed threshold | Percentile-based |
 | **Best For** | Complex evolution | Clean boundaries |
-| **Speed** | Fast | Moderate |
-| **Memory** | Low | Moderate |
+| **Speed** | Slow | Fast |
+| **Memory** | Moderate | Small |
 
 **Recommendation**: 
 - Use **Sun et al.** for tracking events with complex splitting/merging behavior
@@ -271,15 +224,8 @@ If you use this package, please cite the relevant methods:
 }
 ```
 
-**For SpatialTemporalNormalization:**
-```bibtex
-@article{zhao2024,
-  title={Spatial-temporal normalization of marine heat waves},
-  author={Zhao, Z. and others},
-  journal={In Review},
-  year={2024}
-}
-```
+
+
 
 ## Contributing
 
