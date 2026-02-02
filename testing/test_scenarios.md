@@ -106,5 +106,15 @@ Some historically recongized events
 
 ## A Detailed Analysis for MHW tracks in Australia Regions as an example
 We then do some detailed analysis on the 984 Southern Australia Examples.
+![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/Figure_MHWmetric.png)
+
+Evolution composites
+![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/Figure_Evolution.png)
+
+Spatiotemporal Evolution composites and diversity
+![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/Figure_morphologicaldiversity.png)
+
+Annual distribution of MHW diversity
+![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/Figure_annualdistribution.png)
 
 
