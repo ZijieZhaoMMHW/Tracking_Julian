@@ -15,9 +15,55 @@ Compared with the MATLAB code, the implementation based on [MeshArray](https://j
 ![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhw_60.gif)
 
 ## Comparing with MATLAB codes
-To test if the model can provide the same outputs as what we gets from the original MATLAB code, we manually seperate the NOAA OI SST data in the Southeast Australia into two parts.
+To test if the model can provide the same outputs as what we gets from the original MATLAB code, we manually seperate the 0.25o NOAA OI SST data during 1982-2022 in the Southeast Australia (Lon-Lat-Time; 400-160-14975;data_old) into two parts.
 ![two_parts](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/face_example_aus.png)
 
+This results in a new dataset with dimensions 200–160–2–14,975 (denoted as `data_new`). We then perform tracking on both `data_old` and `data_new` using MATLAB and Julia codes. All computations are carried out on the NCAR HPC system, with jobs submitted using a single CPU. Outputs can be found in githubs for MATLAB ([.mat](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/tracks_example.mat)) and Julia ([.h5](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/tracks_example.h5.zip))
+
+<table>
+<colgroup>
+<col width="10%" />
+<col width="45%" />
+<col width="45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Julia</th>
+<th>MATLAB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Number of Events</td>
+<td>984</td>
+<td>984</td>
+</tr>
+<tr class="even">
+<td>Spliting/Merging Ratio</td>
+<td>9.55%</td>
+<td>9.55%</td>
+</tr>
+<tr class="odd">
+<td>Number of Objects</td>
+<td>20254</td>
+<td>20254</td>
+</tr>
+<tr class="even">
+<td>Number of Pixels</td>
+<td>37148175</td>
+<td>37148175</td>
+</tr>
+<tr class="odd">
+<td>Running Time</td>
+<td>0:30:02</td>
+<td>0:32:13</td>
+</tr>
+</tbody>
+</table>
+
+### The 2011 WA MHWs in MATLAB and Julia Codes - The one names MHWs
+![see](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhwbranknn2.gif)
 
 ## Real World Case - Tasman Sea
 ![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhw_tas_ecco_2.gif)
