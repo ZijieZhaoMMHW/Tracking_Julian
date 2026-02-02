@@ -13,9 +13,13 @@ Compared with the MATLAB code, the implementation based on [MeshArray](https://j
 ![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhw_merging.gif)
 ### Complex Scenario
 ![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhw_60.gif)
+
+## Comparing with MATLAB codes
+To test if the model can provide the same outputs as what we gets from the original MATLAB code, we manually seperate the NOAA OI SST data in the Southeast Australia into two parts.
+![two_parts](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/face_example_aus.png)
+
+
 ## Real World Case - Tasman Sea
 ![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhw_tas_ecco_2.gif)
 ## Real World Case - Global Statistics
 ![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/Figure1_ce.png)
-
-## Comparing with MATLAB codes
