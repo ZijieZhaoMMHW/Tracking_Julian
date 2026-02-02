@@ -28,13 +28,13 @@ These methods can be used independently or combined to provide comprehensive hea
 
 ```julia
 using Pkg
-Pkg.add(url="https://github.com/yourusername/HeatWaveTracker.jl")
+Pkg.add(url="https://github.com/ZijieZhaoMMHW/HeatWaveTracker.jl")
 ```
 
 Or in the Julia REPL:
 
 ```julia
-] add https://github.com/yourusername/HeatWaveTracker.jl
+] add https://github.com/ZijieZhaoMMHW/HeatWaveTracker.jl
 ```
 
 ### Dependencies
