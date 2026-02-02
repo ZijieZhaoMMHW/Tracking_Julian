@@ -65,7 +65,32 @@ This results in a new dataset with dimensions 200–160–2–14,975 (denoted as
 ### The 2011 WA MHWs in MATLAB and Julia Codes - The one names MHWs
 ![see](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhwbranknn2.gif)
 
-## Real World Case - Tasman Sea
-![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhw_tas_ecco_2.gif)
+## Global Tracks in ECCOV4R4
+Here we do the MHW tracking in ECCOV4R4 during 1992-2017 (90-90-13-9497; Lon-Lat-Face-Time) with MHW information identified based on baselines during 1992-2012, following the Hobday et al. (2016) definition. Key statistics are provided below:
+
+<table>
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Number of Events</td>
+<td>5217</td>
+</tr>
+<tr class="even">
+<td>Spliting/Merging Ratio</td>
+<td>12.1%</td>
+</tr>
+</tbody>
+</table>
+
+
 ## Real World Case - Global Statistics
 ![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/Figure1_ce.png)
