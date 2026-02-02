@@ -267,12 +267,6 @@ See [Issues](https://github.com/yourusername/HeatWaveTracker.jl/issues) for more
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Hillary Scannell and the Ocetrac team for the object-tracking methodology
-- Di Sun and colleagues for the splitting/merging tracking algorithm
-- Zijie Zhao for the spatial-temporal normalization framework
-- The Julia community for excellent packages and support
 
 
 ## Related Projects
