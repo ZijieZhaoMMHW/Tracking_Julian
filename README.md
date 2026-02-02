@@ -28,13 +28,13 @@ These methods can be used independently or combined to provide comprehensive hea
 
 ```julia
 using Pkg
-Pkg.add(url="https://github.com/yourusername/HeatWaveTracker.jl")
+Pkg.add(url="https://github.com/ZijieZhaoMMHW/HeatWaveTracker.jl")
 ```
 
 Or in the Julia REPL:
 
 ```julia
-] add https://github.com/yourusername/HeatWaveTracker.jl
+] add https://github.com/ZijieZhaoMMHW/HeatWaveTracker.jl
 ```
 
 ### Dependencies
@@ -267,12 +267,6 @@ See [Issues](https://github.com/yourusername/HeatWaveTracker.jl/issues) for more
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Hillary Scannell and the Ocetrac team for the object-tracking methodology
-- Di Sun and colleagues for the splitting/merging tracking algorithm
-- Zijie Zhao for the spatial-temporal normalization framework
-- The Julia community for excellent packages and support
 
 
 ## Related Projects
