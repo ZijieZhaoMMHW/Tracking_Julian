@@ -91,6 +91,20 @@ Here we do the MHW tracking in ECCOV4R4 during 1992-2017 (90-90-13-9497; Lon-Lat
 </tbody>
 </table>
 
-
-## Real World Case - Global Statistics
+Some global statistics are also provided here:
 ![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/Figure1_ce.png)
+
+Some historically recongized events 
+### The "Blob"
+![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhw_blob_ecco_2.gif)
+
+### The 1997-98 ENSO
+![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhw_enso_ecco_2.gif)
+
+### A Central Pacific Nino during 1997-98
+![test](https://github.com/ZijieZhaoMMHW/Tracking_Julian/blob/main/mhw_cp_ecco_2.gif)
+
+## A Detailed Analysis for MHW tracks in Australia Regions as an example
+We then do some detailed analysis on the 984 Southern Australia Examples.
+
+
